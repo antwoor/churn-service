@@ -1,6 +1,6 @@
 [project]
 name = "churn-service"
-version = "0.4.6"
+version = "0.4.7"
 description = "ML Pro 1 sem"
 requires-python=">=3.11,<3.13"
 
@@ -32,6 +32,7 @@ module-name = "churn"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["integration: нужна база данных - адрес в DATABASE_URL"]
 
 [tool.ruff]
 line-length = 150
